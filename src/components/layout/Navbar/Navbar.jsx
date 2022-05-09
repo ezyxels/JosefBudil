@@ -65,7 +65,7 @@ export default function Navbar() {
       aria-label="Hlavní navigace webu"
       className={`w-screen fixed z-100 transform-gpu transition-[background,transform,height,box-shadow] duration-400 ease-in-out ${
         isNavScrolled
-          ? "h-20 bg-body shadow-soft-xl dark:shadow-none"
+          ? "h-20 bg-black shadow-soft-xl dark:shadow-none"
           : "h-20 md:h-32"
       } ${isNavVisible ? "translate-y-0" : "-translate-y-full shadow-none"}`}
     >
@@ -169,15 +169,6 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-
-          {/* Mobile - Odkazy na sociální sítě */}
-          <SocialMedia
-            className={`mt-auto transform-gpu transition ease-out ${
-              isMenuOpen
-                ? "translate-y-0 opacity-100 duration-500 delay-450"
-                : "-translate-y-12 opacity-0 duration-0 delay-150"
-            }`}
-          />
         </div>
       </div>
     </nav>

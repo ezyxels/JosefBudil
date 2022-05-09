@@ -1,12 +1,12 @@
 // Hlavní odkazy navigace webu - generují se automaticky
 export const mainRoutes = [
-  /*{
+  {
     label: "O MNĚ",
     path: "/",
   },
   {
     label: "SLUŽBY",
-    path: "",
+    path: "/new-page",
   },
   {
     label: "REFERENCE",
@@ -14,32 +14,8 @@ export const mainRoutes = [
   },
   {
     label: "KONTAKT",
-    path: "/docs/scroll-reveal",
-  },*/
-  {
-    label: "Domů",
-    path: "/",
-  },
-  {
-    label: "Ui třídy",
-    path: "/docs/ui-classes",
-  },
-  {
-    label: "Komponenty",
-    path: "/docs/components",
-  },
-  {
-    label: "Animace",
-    path: "/docs/scroll-reveal",
-  },
-  {
-    label: "Demo",
-    path: "/demo",
-  },
-  {
-    label: "Kontakt",
     path: "/contact",
-  },
+  }
 ];
 
 // Call to action v navigaci - generují se z automaticky a první je v desktopové verzi

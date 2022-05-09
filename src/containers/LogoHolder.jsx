@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function LogoHolder({ className = "", logoSrc }) {
   return (
-    <div className={`w-24 h-10 mx-auto ${className}`}>
+    <div className={`w-24 h-10 mx-auto my-5 ${className}`}>
       <img
         src={logoSrc}
         alt="Logo značky"

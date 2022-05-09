@@ -10,7 +10,7 @@ const globalSettings = {
   },
   launchDate: "1. 1. 2022",
   client: {
-    fullName: "Jan Novák",
+    fullName: "Josef Budil",
     companyName: "Firma s.r.o.",
     ico: "01234567",
     phone: "+420 123 456 789",

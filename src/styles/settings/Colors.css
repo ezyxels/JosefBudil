@@ -1,7 +1,7 @@
 :root {
   /* Main colors */
-  --color-primary: 353, 86%, 54%;
-  --color-secondary: 258, 86%, 34%;
+  --color-primary: 24, 100%, 50%;
+  --color-secondary: 212, 86%, 19%;
 
   --color-muted: var(--color-gray-500);
   --color-default: var(--color-gray-700);
