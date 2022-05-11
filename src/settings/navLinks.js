@@ -2,7 +2,7 @@
 export const mainRoutes = [
   {
     label: "O MNĚ",
-    path: "/",
+    path: "/#onas",
   },
   {
     label: "SLUŽBY",
@@ -14,7 +14,7 @@ export const mainRoutes = [
   },
   {
     label: "KONTAKT",
-    path: "/contact",
+    path: "/#kontakt",
   }
 ];
 

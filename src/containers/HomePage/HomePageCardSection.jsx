@@ -2,14 +2,14 @@ import HomePageCard from "./HomePageCard";
 
 export default function HomePageCardSection(){
   return(
-    <section className="w-full py-16 lg:py-32 bg-secondary text-white">
+    <section className="w-full py-32 lg:py-64 bg-secondary text-white">
       <div 
-        className="ui-wrapper flex flex-col lg:flex-row justify-between mx-auto"
+        className="ui-wrapper flex flex-col xl:flex-row justify-between mx-auto"
         data-wrapper="md"
       >
-        <div className="lg:w-5/12 flex flex-col my-auto">
+        <div className="xl:w-5/12 flex flex-col my-auto">
           <h2 
-            className="ui-heading ui-separator text-white text-left md:mb-20"
+            className="ui-heading ui-separator text-white text-left mb-20"
             data-separator="left"
             data-heading="lg"
           >
@@ -25,7 +25,7 @@ export default function HomePageCardSection(){
             tristique senectus et netus e
           </p>
         </div>
-        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 my-5">
+        <div className="xl:w-1/2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-5 my-5">
           <HomePageCard
             number="1"
             title="První služba"
@@ -47,7 +47,7 @@ export default function HomePageCardSection(){
                   consectetuer adipiscing elit. .
                   Aliquam."
             linkText="VÍCE INFORMACÍ"
-            linkHref="sem.tam.cz"
+            linkHref=""
           />
 
           <HomePageCard
@@ -59,7 +59,7 @@ export default function HomePageCardSection(){
                   consectetuer adipiscing elit. .
                   Aliquam."
             linkText="VÍCE INFORMACÍ"
-            linkHref="sem.tam.cz"
+            linkHref=""
           />
 
           <HomePageCard
@@ -71,7 +71,7 @@ export default function HomePageCardSection(){
                   consectetuer adipiscing elit. .
                   Aliquam."
             linkText="VÍCE INFORMACÍ"
-            linkHref="sem.tam.cz"
+            linkHref=""
           />
         </div>
       </div>

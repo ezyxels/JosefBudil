@@ -1,5 +1,6 @@
 import globalSettings from "settings/globalSettings";
-import { mainRoutes, callToAction } from "settings/navLinks";
+import { callToAction } from "settings/navLinks";
+import useClipboard from "hooks/useClipboard";
 
 //  Icons
 import{
@@ -14,7 +15,8 @@ import{
 export default function HomePageContactSection(){
   return(
     <section 
-      className="ui-wrapper py-32 text-center grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-around"
+      id="kontakt"
+      className="ui-wrapper py-64 text-center grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-around"
       data-wrapper="md"
       >
       <div className="mb-5 flex flex-col text-left">
@@ -33,8 +35,8 @@ export default function HomePageContactSection(){
         </p>
       </div>
       <div className="md:w-4/5 mt-auto md:ml-auto flex flex-col text-left text-primary">
-        <div className="my-1 flex flex-row justify-between">
-          <p className="ui-link text-xl self-center lg:inline-flex">
+        <div className="my-2 flex flex-row justify-between">
+          <p className="text-xl font-medium">
            {callToAction[0].label}
           </p>
           <div className="grid grid-cols-2 gap-3">
@@ -42,33 +44,33 @@ export default function HomePageContactSection(){
               href={callToAction[0].link}
               data-link="4"
             >
-              <FaPhone className="w-8 p-1 bg-orange-300 rounded-full rotate-90"/>
+              <FaPhone className="w-10 p-2 bg-orange-300 rounded-full rotate-90"/>
             </a>
             <button
               onClick={() =>  navigator.clipboard.writeText(callToAction[0].label)}
             >
-              <FaCopy className="w-8 p-1 bg-orange-300 rounded-full"/>
+              <FaCopy className="w-10 p-2 bg-orange-300 rounded-full"/>
             </button>
           </div>
         </div>
-        <div className="my-1 flex flex-row justify-between">
-          <p className="ui-link text-xl self-center lg:inline-flex">{callToAction[1].label}</p>
+        <div className="my-2 flex flex-row justify-between">
+          <p className="text-xl font-medium">{callToAction[1].label}</p>
           <div className="grid grid-cols-2 gap-3">
             <a
               href={callToAction[1].link}
               data-link="4"
             >
-              <HiMail className="w-8 p-1 bg-orange-300 rounded-full"/>
+              <HiMail className="w-10 p-2 bg-orange-300 rounded-full"/>
             </a>
             <button
               onClick={() =>  navigator.clipboard.writeText(callToAction[1].label)}
             >
-            <FaCopy className="w-8 p-1 bg-orange-300 rounded-full"/>
+            <FaCopy className="w-10 p-2 bg-orange-300 rounded-full"/>
             </button>
           </div>
         </div>
-        <div className="my-1 flex flex-row justify-between">
-          <p  className="ui-link text-xl self-center lg:inline-flex">
+        <div className="my-2 flex flex-row justify-between">
+          <p  className="text-xl font-medium">
             {globalSettings.client.adress}
           </p>
           <div className="grid grid-cols-2 gap-3">
@@ -76,13 +78,14 @@ export default function HomePageContactSection(){
               href={globalSettings.client.adress}
               data-link="4"
             >
-              <FaLocationArrow className="w-8 p-1 bg-orange-300 rounded-full"/>
+              <FaLocationArrow className="w-10 p-2 bg-orange-300 rounded-full"/>
             </a>
             <button
-              onClick={() =>  navigator.clipboard.writeText(globalSettings.client.adress)}
+              onClick={useClipboard(globalSettings.client.adress)}
             >
-              <FaCopy className="w-8 p-1 bg-orange-300 rounded-full"/>
+              <FaCopy className="w-10 p-2 bg-orange-300 rounded-full"/>
             </button>
+
           </div>
         </div>
       </div>

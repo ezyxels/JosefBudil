@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="footer w-screen border-t border-default border-opacity-20 bg-gray-950 text-white">
       <div
-        className="ui-wrapper flex py-10 lg:py-16 items-center justify-between text-center lg:flex-row"
+        className="ui-wrapper flex flex-col py-10 lg:py-16 items-center justify-between text-center lg:flex-row"
         data-wrapper="lg"
       >
         <div className="flex flex-col text-left">
@@ -24,7 +24,7 @@ export default function Footer() {
             Copyright © {new Date().getFullYear()} {globalSettings.meta.shortUrl}
           </span>
         </div>
-        <div className="flex flex-col md:flex-row mt-auto">
+        <div className="flex flex-col md:flex-row mt-5 md:mt-auto">
           <ul className="list-none flex flex-col md:mr-10">
             <li className="self-center mt-auto mb-auto">
               <Link

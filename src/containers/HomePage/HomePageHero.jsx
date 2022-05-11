@@ -1,28 +1,37 @@
 import { StaticImage } from "gatsby-plugin-image";
 import Button from "components/ui/Button"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import HomePageHeroPanel from "./HomePageHeroPanel";
 
 export default function HomePageHero() {
   return (
-    <header className="w-screen relative" role="banner">
+    <header className="relative" role="banner">
       <StaticImage 
         src="../../Assets/images/hero-bg.jpg"
-        alt="hero background"
-        className="-z-1"
+        alt="obrázek pozadí"
+        className="w-screen h-screen -z-1"
+        objectFit="cover"
+        loading="eager"
       />
       <div
-        className="ui-wrapper relative md:absolute -top-20 md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 flex flex-col justify-center items-center text-white"
+        className="ui-wrapper absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center text-white"
         data-wrapper="sm"
       >
-        <h2 className="ui-heading self-center text-center lg:text-2xl mb-2 text-white">
+        <span 
+          className="ui-heading self-center text-center lg:text-2xl mb-2 text-white"
+          data-heading="md"
+          >
           LOREM IPSUM DOLOR
-        </h2>
-        <h1 className="ui-heading w-full text-center text-white text-3xl lg:text-6xl">
+        </span>
+        <h1 
+          className="ui-heading w-full text-center text-white text-3xl lg:text-6xl"
+          data-heading="lg"
+        >
           LOREM IPSUM DOLOR
         </h1>
         <div className="flex flex-col-reverse md:flex-col">
-          <p className="ui-lead my-3 self-center text-center text-black md:text-white">
+          <p className="ui-lead my-3 self-center text-center text-white">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
             Phasellus rhoncus. Aliquam ante. Aliquam erat volutpat.
             Suspendisse nisl. Integer pellentesque quam vel velit. Etiam
@@ -35,7 +44,10 @@ export default function HomePageHero() {
             color="primary"
             size="sm"
           >
-            ZJISTIT VÍCE
+            <AnchorLink
+              to="/#onas"
+              title="ZJISTIT VÍCE"
+            />
           </Button>
         </div>
       </div>

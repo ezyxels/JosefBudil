@@ -22,9 +22,9 @@ export default function IndexPage() {
 
       <HomePageHero />
       <HomePageWhyUs />
-      <HomePageLogoPanel/>
-      <HomePageCardSection/>
-      <HomePageContactSection/>
+      <HomePageLogoPanel />
+      <HomePageCardSection />
+      <HomePageContactSection />
     </AppLayout>
   );
 }

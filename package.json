@@ -39,6 +39,9 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
+    "react-native": "^0.68.2",
+    "react-native-open-map": "^3.0.2",
+    "react-native-open-maps": "^0.4.0",
     "swiper": "^7.4.1"
   },
   "devDependencies": {

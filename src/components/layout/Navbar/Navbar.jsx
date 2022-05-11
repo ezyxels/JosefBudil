@@ -12,13 +12,11 @@ import { isBrowser } from "utils/isBrowser";
 
 // Global components
 import Link from "components/ui/Link";
-import Tooltip from "components/ui/Tooltip";
+import AnchorLink from "components/ui/AnchorLink";
 import BrandLogo from "components/BrandLogo";
-import SocialMedia from "components/SocialMedia";
 
 // Tightly coupled components
 import NavbarBurgerButton from "./NavbarBurgerButton";
-import NavbarThemeToggler from "./NavbarThemeToggler";
 
 export default function Navbar() {
   // State
@@ -65,7 +63,7 @@ export default function Navbar() {
       aria-label="Hlavní navigace webu"
       className={`w-screen fixed z-100 transform-gpu transition-[background,transform,height,box-shadow] duration-400 ease-in-out ${
         isNavScrolled
-          ? "h-20 bg-black shadow-soft-xl dark:shadow-none"
+          ? "h-20 bg-gray-950 shadow-soft-xl dark:shadow-none"
           : "h-20 md:h-32"
       } ${isNavVisible ? "translate-y-0" : "-translate-y-full shadow-none"}`}
     >
@@ -83,6 +81,14 @@ export default function Navbar() {
         <ul className="list-none mr-5 xl:mr-8 space-x-7 xl:space-x-12 hidden lg:flex">
           {mainRoutes.map((item) => (
             <li key={item.label}>
+              {item.path.includes("#") ? 
+              <AnchorLink
+                to={item.path}
+                children={item.label}
+                className="ui-link uppercase text-sm text-white"
+                data-link="2"
+              />
+              : 
               <Link
                 to={item.path}
                 className="ui-link uppercase text-sm text-white"
@@ -90,6 +96,7 @@ export default function Navbar() {
               >
                 {item.label}
               </Link>
+              }
             </li>
           ))}
         </ul>
@@ -136,6 +143,15 @@ export default function Navbar() {
           >
             {mainRoutes.map((item) => (
               <li key={item.label}>
+                {item.path.includes("#") ? 
+                <AnchorLink
+                  to={item.path}
+                  onClick={closeMenu}
+                  children={item.label}
+                  className="ui-link text-xl uppercase text-rich font-bold"
+                  data-link="2"
+                />
+                : 
                 <Link
                   to={item.path}
                   onClick={closeMenu}
@@ -144,6 +160,7 @@ export default function Navbar() {
                 >
                   {item.label}
                 </Link>
+                }
               </li>
             ))}
           </ul>

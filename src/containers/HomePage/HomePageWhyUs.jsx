@@ -2,12 +2,13 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function HomePageWhyUs(){
   return(
-  <section 
+  <section
+      id="onas"
       className="ui-wrapper py-32 md:pt-52 text-center flex flex-col items-center justify-center"
       data-wrapper="md"
     >
       <h3 
-        className="ui-heading ui-separator text-secondary"
+        className="ui-heading ui-separator text-secondary mb-32"
         data-separator="center"
         data-heading="lg"
       >

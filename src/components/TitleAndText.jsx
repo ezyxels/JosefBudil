@@ -2,7 +2,7 @@ export default function TitleAndText({ title, text1, text2 }){
   return(
     <section 
         className="ui-wrapper py-20"
-        data-wrapper="md"
+        data-wrapper="sm"
         >
         <h2
           className="ui-heading"

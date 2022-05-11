@@ -10,7 +10,7 @@ export default function BrandLogo({ className = "" }) {
         alt="Logo značky"
         width="96"
         height="40"
-        className="w-full h-full dark:invert"
+        className="w-full h-full invert"
       />
     </div>
   );
