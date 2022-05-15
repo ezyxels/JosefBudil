@@ -42,6 +42,7 @@
     "react-native": "^0.68.2",
     "react-native-open-map": "^3.0.2",
     "react-native-open-maps": "^0.4.0",
+    "react-use-clipboard": "^1.0.8",
     "swiper": "^7.4.1"
   },
   "devDependencies": {

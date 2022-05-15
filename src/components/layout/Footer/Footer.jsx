@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="footer w-screen border-t border-default border-opacity-20 bg-gray-950 text-white">
       <div
-        className="ui-wrapper flex flex-col py-10 lg:py-16 items-center justify-between text-center lg:flex-row"
+        className="ui-wrapper flex flex-col py-10 lg:py-16 items-center justify-between text-center sm:flex-row"
         data-wrapper="lg"
       >
         <div className="flex flex-col text-left">

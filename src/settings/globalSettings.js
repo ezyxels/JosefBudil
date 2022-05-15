@@ -16,6 +16,7 @@ const globalSettings = {
     phone: "+420 123 456 789",
     email: "info@domena.cz",
     adress: "Ulice 123, 000 00 Město",
+    googleAdress:"https://goo.gl/maps/Pn3GPAV5ZUwRcdGV8"
   },
   darkMode: {
     storageKey: "reveal-theme",

@@ -6,11 +6,11 @@ export const mainRoutes = [
   },
   {
     label: "SLUŽBY",
-    path: "/new-page",
+    path: "/#sluzby",
   },
   {
     label: "REFERENCE",
-    path: "",
+    path: "/#reference",
   },
   {
     label: "KONTAKT",

@@ -1,20 +1,25 @@
 import { StaticImage } from "gatsby-plugin-image";
+import { SlideUp } from "components/scroll-reveal-animations";
 
 export default function HomePageWhyUs(){
   return(
   <section
       id="onas"
-      className="ui-wrapper py-32 md:pt-52 text-center flex flex-col items-center justify-center"
+      className="ui-wrapper mt-96 xs:mt-72 md:mt-20 py-20 md:py-40 text-center flex flex-col items-center justify-center"
       data-wrapper="md"
     >
-      <h3 
-        className="ui-heading ui-separator text-secondary mb-32"
+      <SlideUp
+        as="h3"
+        className="ui-heading ui-separator text-secondary mb-20"
         data-separator="center"
         data-heading="lg"
       >
           Proč si vybrat nás?
-        </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-between">
+        </SlideUp>
+      <SlideUp 
+        as="div"
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-between"
+      >
         <StaticImage 
           src="../../Assets/images/why-us.jpeg"
           alt="..."
@@ -28,7 +33,7 @@ export default function HomePageWhyUs(){
           netus et Lorem ipsum dolor sit amet, consectetuer adipiscing
           elit. Phasellus rhoncus. Aliquam ante. Aliquam erat 
         </p>
-      </div>
+      </SlideUp>
     </section>
   );
 }

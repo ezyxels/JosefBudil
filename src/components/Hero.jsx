@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 
-import Button from "components/ui/Button"
-
 export default function Hero({ title }) {
   return (
     <header className="w-screen h-96 lg:h-screen bg-gradient-to-b from-secondary to-black" role="banner">

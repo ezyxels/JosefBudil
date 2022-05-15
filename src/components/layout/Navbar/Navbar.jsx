@@ -73,8 +73,8 @@ export default function Navbar() {
         data-wrapper="lg"
       >
         {/* Logo navigace */}
-        <Link to="/" onClick={closeMenu} className="mr-auto z-10">
-          <BrandLogo />
+        <Link to="/" onClick={closeMenu} className={`mr-auto z-10 ${isMenuOpen ? "invert" : null}`}>
+          <BrandLogo className=""/>
         </Link>
 
         {/* Desktop - hlavní list s položkami menu */}
