@@ -14,7 +14,7 @@ export default function Footer() {
         className="ui-wrapper flex flex-col py-10 lg:py-16 items-center justify-between text-center sm:flex-row"
         data-wrapper="lg"
       >
-        <div className="flex flex-col text-left">
+        <div className="flex flex-col sm:text-left">
           <p className="mb-8">{globalSettings.client.fullName}</p>
           <p>IČ: {globalSettings.client.ico}</p>
           <p>Tel: {globalSettings.client.phone}</p>

@@ -61,7 +61,7 @@ export default function Navbar() {
   return (
     <nav
       aria-label="Hlavní navigace webu"
-      className={`w-screen fixed z-100 transform-gpu transition-[background,transform,height,box-shadow] duration-400 ease-in-out ${
+      className={`w-screen fixed z-100 backdrop-blur-sm transform-gpu transition-[background,transform,height,box-shadow] duration-400 ease-in-out ${
         isNavScrolled
           ? "h-20 bg-gray-950 shadow-soft-xl dark:shadow-none"
           : "h-20 md:h-32"
@@ -74,7 +74,12 @@ export default function Navbar() {
       >
         {/* Logo navigace */}
         <Link to="/" onClick={closeMenu} className={`mr-auto z-10 ${isMenuOpen ? "invert" : null}`}>
-          <BrandLogo className=""/>
+          <span
+            className="ui-heading my-auto uppercase text-white font-normal"
+            data-heading="md"
+          >
+              Josef Budil
+            </span>
         </Link>
 
         {/* Desktop - hlavní list s položkami menu */}

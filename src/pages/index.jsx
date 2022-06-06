@@ -5,26 +5,26 @@ import AppLayout from "layouts/AppLayout";
 import Seo from "components/Seo";
 
 // Page Components
-import HomePageHero from "containers/HomePage/HomePageHero";
-import HomePageCardSection from "containers/HomePage/HomePageCardSection";
-import HomePageLogoPanel from "containers/HomePage/HomePageLogoPanel";
-import HomePageWhyUs from "containers/HomePage/HomePageWhyUs";
-import HomePageContactSection from "containers/HomePage/HomePageContactSection";
+import Hero from "containers/HomePage/Hero";
+import CardSection from "containers/HomePage/CardSection";
+import LogoPanel from "containers/HomePage/LogoPanel";
+import WhyUs from "containers/HomePage/WhyUs";
+import ContactSection from "containers/HomePage/ContactSection";
 
 export default function IndexPage() {
   return (
     <AppLayout>
       <Seo
-        title="Hlavní stránka"
-        description="Starter se základními knihovnamy, komponenty a kódem pro rychlý a produktivní vývoj nového projektu."
-        keywords="react, javascript, css framework, user interface"
+        title="Revize, požární ochrana, BOZP a další"
+        description="Kompletní služby v oblasti bezpečnosti práce, požární ochrany revizí elektrických zařízení a koordinace na staveništi s působností v celém Plzeňském kraji."
+        keywords="revize elektro plzen, bozp plzen, pozarni ochrana plzen, revize plzen"
       />
 
-      <HomePageHero />
-      <HomePageWhyUs />
-      <HomePageLogoPanel />
-      <HomePageCardSection />
-      <HomePageContactSection />
+      <Hero />
+      <WhyUs />
+      <LogoPanel />
+      <CardSection />
+      <ContactSection />
     </AppLayout>
   );
 }

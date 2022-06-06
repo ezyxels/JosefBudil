@@ -1,9 +1,6 @@
 export default function TitleAndText({ title, text1, text2 }){
   return(
-    <section 
-        className="ui-wrapper py-20"
-        data-wrapper="sm"
-        >
+    <section className="py-2">
         <h2
           className="ui-heading"
           data-heading="md"
@@ -14,9 +11,9 @@ export default function TitleAndText({ title, text1, text2 }){
           {text1}
         </p>
         <br/>
-        <p>
+        <b>
           {text2}
-        </p>
+        </b>
       </section>
   );
 }

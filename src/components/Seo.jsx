@@ -7,7 +7,7 @@ import globalSettings from "settings/globalSettings";
 export default function Seo({ title, description, keywords, robotsEnabled }) {
   return (
     <Helmet>
-      <title>{`${globalSettings.meta.siteName} | ${title}`}</title>
+      <title>{`${title} | ${globalSettings.meta.siteName}`}</title>
       <meta name="description" content={description} />
 
       {/* Social media */}

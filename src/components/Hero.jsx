@@ -7,7 +7,7 @@ export default function Hero({ title }) {
         className="ui-wrapper h-full flex flex-col justify-center items-center text-white"
         data-wrapper="sm"
       >
-        <h1 className="ui-heading w-full text-center text-white text-3xl sm:text-5xl lg:text-6xl">
+        <h1 className="ui-heading uppercase w-full text-center text-white text-3xl sm:text-5xl lg:text-6xl">
           {title}
         </h1>
       </div>
