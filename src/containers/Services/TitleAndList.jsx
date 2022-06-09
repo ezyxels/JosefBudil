@@ -5,8 +5,8 @@ export default function TitleAndList({ title, listArray, ulHeadingBold }){
           {title}
         </p>
         <ul className="list-disc list-outside pl-7">
-          {listArray.map(listItem => (
-            <li>{listItem}</li>
+          {listArray.map((listItem, index) => (
+            <li key={index}>{listItem}</li>
           ))}
         </ul>
       </section>

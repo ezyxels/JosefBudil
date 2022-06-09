@@ -135,11 +135,11 @@ export default function Navbar() {
         }`}
       >
         {/* Vnitřní wrapper mobilního menu */}
-        <div className="ui-wrapper h-full pt-24 xs:pt-28 pb-44 flex flex-col items-center justify-between">
+        <div className="ui-wrapper h-full pt-24 xs:pt-56 pb-44 flex flex-col items-center justify-between">
           {/* Mobile - Menu list s položkami */}
           <ul
             id="mobile-menu-list"
-            className={`list-none space-y-5 flex flex-col text-center items-center justify-start transform-gpu transition ease-out ${
+            className={`list-none space-y-12 flex flex-col text-center items-center justify-start transform-gpu transition ease-out ${
               isMenuOpen
                 ? "translate-y-0 opacity-100 duration-500 delay-150"
                 : "-translate-y-12 opacity-0 duration-0 delay-150"
@@ -152,14 +152,14 @@ export default function Navbar() {
                   to={item.path}
                   onClick={closeMenu}
                   children={item.label}
-                  className="ui-link text-xl uppercase text-rich font-bold"
+                  className="ui-link text-3xl uppercase text-rich font-bold"
                   data-link="2"
                 />
                 : 
                 <Link
                   to={item.path}
                   onClick={closeMenu}
-                  className="ui-link text-xl uppercase text-rich font-bold"
+                  className="ui-link text-3xl uppercase text-rich font-bold"
                   data-link="2"
                 >
                   {item.label}

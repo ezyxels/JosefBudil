@@ -5,7 +5,7 @@ export default function WhyUs(){
   return(
   <section
       id="onas"
-      className="ui-wrapper mt-96 sm:mt-52 md:mt-20 py-20 md:py-40 text-center flex flex-col items-center justify-center"
+      className="ui-wrapper mt-128 sm:mt-72 md:mt-28 py-20 md:py-40 text-center flex flex-col items-center justify-center"
       data-wrapper="md"
     >
       <SlideUp
@@ -28,7 +28,7 @@ export default function WhyUs(){
         />
         <p className="lg:p-8 m-auto text-left">
         Nabízím komplexní služby v oblasti BOZP a PO (bezpečnosti práce a požární ochrany) s působností v Plzeňském kraji. Naše služby zahrnují poradenství a konzultace a veškerý související servis. 
-        Nabízíme více jak 9let zkušenost, což je určitou zárukou a garancí kvality poskytovaných služeb. Mám zkušenosti jak s malými, tak velkými mezinárodními korporacemi. Bedlivě hlídáme aktuálnost všech zákonů a nařízení České republiky a souvisejících zákonů z Evropské unie. Za provedenou práci přebíráme plnou zodpovědnost .
+        Nabízíme více jak 9let zkušenost, což je určitou zárukou a garancí kvality poskytovaných služeb. Mám zkušenosti jak s malými, tak velkými mezinárodními korporacemi. Bedlivě hlídáme aktuálnost všech zákonů a nařízení České republiky a souvisejících zákonů z Evropské unie. Za provedenou práci přebíráme plnou zodpovědnost.
         <br></br><br></br>
         <b>Naší prioritou je Vaše spokojenost!</b>
         </p>

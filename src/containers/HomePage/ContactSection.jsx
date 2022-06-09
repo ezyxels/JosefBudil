@@ -32,7 +32,7 @@ export default function ContactSection(){
       className="ui-wrapper py-20 lg:py-40 text-center flex flex-col md:flex-row items-center justify-between"
       data-wrapper="md"
       >
-      <div className="mb-5 flex flex-col text-left max-w-[85%] mr-5">
+      <div className="mb-5 flex flex-col text-left md:max-w-[85%] md:mr-5">
         <SlideUp
           as="h2"
           className="ui-heading ui-separator text-black"
@@ -48,13 +48,13 @@ export default function ContactSection(){
       </div>
       <SlideUp
         as="div"
-        className="md:w-4/5 mt-auto md:ml-auto flex flex-col text-left text-primary"
+        className="md:w-4/5 mt-auto md:ml-auto flex flex-col text-left text-primary w-full"
       >
         <div className="my-2 flex flex-row justify-between">
           <p className="my-auto text-xl font-medium">
            {callToAction[0].label}
           </p>
-          <div className="grid grid-cols-2 gap-3 items-center min-w-[80px]">
+          <div className="grid grid-cols-2 gap-3 items-center min-w-[90px]">
             <a
               href={callToAction[0].link}
               className="self-center"
@@ -73,7 +73,7 @@ export default function ContactSection(){
         </div>
         <div className="my-2 flex flex-row justify-between">
           <p className="my-auto text-xl font-medium">{callToAction[1].label}</p>
-          <div className="grid grid-cols-2 gap-3 items-center min-w-[80px]">
+          <div className="grid grid-cols-2 gap-3 items-center min-w-[90px]">
             <a
               href={callToAction[1].link}
               className="self-center"
@@ -91,10 +91,10 @@ export default function ContactSection(){
           </div>
         </div>
         <div className="my-2 flex flex-row justify-between">
-          <p  className="my-auto text-xl font-medium">
+          <p  className="my-auto text-xl font-medium mr-4">
             {globalSettings.client.adress}
           </p>
-          <div className="grid grid-cols-2 gap-3 items-center min-w-[80px]">
+          <div className="grid grid-cols-2 gap-3 items-center min-w-[90px]">
             <a
               href={globalSettings.client.googleAdress}
               target="_blank"

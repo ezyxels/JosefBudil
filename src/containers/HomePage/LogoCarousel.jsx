@@ -24,8 +24,8 @@ export default function LogoCarousel({textArray}) {
       }}
       className="h-auto"
     >
-      {textArray.map(textSingle => (
-        <SwiperSlide className="py-20 rounded-default overflow-hidden flex flex-col items-center justify-center text-center bg-gray-200">
+      {textArray.map((textSingle, index) => (
+        <SwiperSlide className="py-20 rounded-default overflow-hidden flex flex-col items-center justify-center text-center bg-gray-200" key={index}>
           <p className="ui-heading mb-0">{textSingle}</p>
       </SwiperSlide>
       ))}

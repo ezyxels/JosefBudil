@@ -16,8 +16,8 @@ export default function LogoSection(){
       id="reference"
     >
        <div className="py-3 md:py-10 hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 items-center bg-gray-200">
-        {firmy.map(firma => (
-          <div className="h-40 flex justify-center items-center">
+        {firmy.map((firma, index) => (
+          <div className="h-40 flex justify-center items-center" key={index}>
             <p className="text-2xl text-center font-bold p-5">{firma}</p>
           </div>
         ))}
