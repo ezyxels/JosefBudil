@@ -31,7 +31,7 @@ export default function CardSection(){
         </div>
         <div className="xl:w-1/2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-5 my-5">
           <Card
-            number="1"
+            number={1}
             title="Revize"
             text="Kontroly (revize) a opravy požárně bezpečnostních zařízení (PBZ). 
                   Kontroly provozuschopnosti hasicích přístrojů. Tlakové zkoušky hasicích přístrojů.
@@ -41,7 +41,7 @@ export default function CardSection(){
           />
 
           <Card
-            number="2"
+            number={2}
             title="Koordinátor na staveništi"
             text="Poskytování služeb koordinátora dle 309/2006 Sb."
             linkText="VÍCE INFORMACÍ"
@@ -49,7 +49,7 @@ export default function CardSection(){
           />
 
           <Card
-            number="3"
+            number={3}
             title="Požární ochrana"
             text="Kompletní zajištění povinností právnických i fyzických osob podle
                zákona o PO osobou odborně  způsobilou. 
@@ -60,7 +60,7 @@ export default function CardSection(){
           />
 
           <Card
-            number="4"
+            number={4}
             title="Bezpečnost práce"
             text="Kompletní zajištění povinností právnických osob vyplývajících ze zákoníku práce:
             vyhledávání rizik a prevence rizik, včetně zpracování dokumentace a další."

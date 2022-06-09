@@ -13,7 +13,6 @@ import { isBrowser } from "utils/isBrowser";
 // Global components
 import Link from "components/ui/Link";
 import AnchorLink from "components/ui/AnchorLink";
-import BrandLogo from "components/BrandLogo";
 
 // Tightly coupled components
 import NavbarBurgerButton from "./NavbarBurgerButton";

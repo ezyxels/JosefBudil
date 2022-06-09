@@ -22,7 +22,7 @@ export default function WhyUs(){
       >
         <StaticImage 
           src="../../Assets/images/why-us.jpeg"
-          alt="..."
+          alt="Bezpečnost práce"
           loading="lazy"
           formats={["avif","webp", "jpeg", "png"]}
         />

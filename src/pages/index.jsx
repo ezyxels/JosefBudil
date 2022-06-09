@@ -7,7 +7,7 @@ import Seo from "components/Seo";
 // Page Components
 import Hero from "containers/HomePage/Hero";
 import CardSection from "containers/HomePage/CardSection";
-import LogoPanel from "containers/HomePage/LogoPanel";
+import LogoSection from "containers/HomePage/LogoSection";
 import WhyUs from "containers/HomePage/WhyUs";
 import ContactSection from "containers/HomePage/ContactSection";
 
@@ -22,7 +22,7 @@ export default function IndexPage() {
 
       <Hero />
       <WhyUs />
-      <LogoPanel />
+      <LogoSection />
       <CardSection />
       <ContactSection />
     </AppLayout>

@@ -1,4 +1,4 @@
-import DemoCarousel from "containers/Demo/DemoCarousel";
+import LogoCarousel from "containers/HomePage/LogoCarousel";
 
 const firmy = [
   "Pfeifer Holz s.r.o", 
@@ -10,7 +10,7 @@ const firmy = [
   "Dřevovýroba Herout spol. s.r.o"
 ]
 
-export default function LogoPanel(){
+export default function LogoSection(){
   return(
     <section
       id="reference"
@@ -23,7 +23,7 @@ export default function LogoPanel(){
         ))}
       </div>
       <div className="sm:hidden">
-        <DemoCarousel textArray={firmy}/>
+        <LogoCarousel textArray={firmy}/>
       </div>
   </section>
     

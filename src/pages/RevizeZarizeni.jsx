@@ -4,10 +4,10 @@ import AppLayout from "layouts/AppLayout";
 // Global components
 import Seo from "components/Seo";
 import Hero from "components/Hero";
-import TitleAndText from "components/TitleAndText";
 import Button from "components/ui/Button";
-import TitleAndList from "components/TitleAndList";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import TitleAndList from "containers/Services/TitleAndList";
+import TitleAndText from "containers/Services/TitleAndText";
 
 export default function NewPage() {
   return (
@@ -23,7 +23,7 @@ export default function NewPage() {
       />
       
       <div 
-        className="ui-wrapper py-48"
+        className="ui-wrapper flex flex-col py-48"
         data-wrapper="sm"
       >
         <h2 
@@ -79,18 +79,18 @@ export default function NewPage() {
             "sekačky a další"
           ]}
         />
-        <Button 
-          as="button"
-          className="left-1/2 -translate-x-1/2 translate-y-20 mb-20"
-          shape="pill"
-          color="primary"
-          size="sm"
+        <AnchorLink
+          to="/#kontakt"
+          className="block my-20 mx-auto"
         >
-          <AnchorLink
-            to="/#kontakt"
-            title="OBJEDNAT SLUŽBU"
+          <Button 
+            as="button"
+            shape="pill"
+            color="primary"
+            size="sm"
+            children="OBJEDNAT SLUŽBU"
           />
-        </Button>
+        </AnchorLink>
       </div>
     </AppLayout>
   );

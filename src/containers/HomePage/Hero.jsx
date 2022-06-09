@@ -23,39 +23,38 @@ export default function Hero() {
       >
         <SlideUp
           as="span"
-          className="ui-heading self-center text-center lg:text-2xl mb-4 mt-20 sm:mt-0 text-white"
-          data-heading="md"
+          className="ui-heading font-medium tracking-widest uppercase self-center text-center mb-4 mt-20 sm:mt-0 text-white"
+          data-heading="sm"
           >
           Bezpečák pino - plzeň
         </SlideUp>
         <SlideUp
           as="h1"
-          className="ui-heading w-full text-center text-white text-3xl lg:text-6xl"
+          className="ui-heading uppercase w-full text-center text-white text-3xl lg:text-6xl"
           data-heading="lg"
         >
-          REVIZE bez starostí
+          Revize bez starostí
         </SlideUp>
         <SlideUp
           as="div"
           className="flex flex-col"
         >
-          <p className="ui-lead my-3 self-center text-center text-white">
+          <p className="ui-lead my-3 self-center text-center leading-7 md:leading-8 text-white">
           Nabízíme kompletní služby v oblasti bezpečnosti práce a požární ochrany s působností v celém Plzeňském kraji. Naše služby nabízejí poradenství, konzultace a veškerý související servis. 
-          Bedlivě hlídáme aktuálnost všech zákonů a nařízení České republiky a souvisejících zákonů z Evropské unie. Za provedenou práci přebíráme plnou zodpovědnost .
- 
+          Bedlivě hlídáme aktuálnost všech zákonů a nařízení České republiky a souvisejících zákonů z Evropské unie. Za provedenou práci přebíráme plnou zodpovědnost.
           </p>
-          <Button 
-            as="button"
-            className="mx-auto sm:translate-y-12"
-            shape="pill"
-            color="primary"
-            size="sm"
-          >
-            <AnchorLink
+          <AnchorLink
               to="/#onas"
-              title="ZJISTIT VÍCE"
+              className="mx-auto sm:translate-y-12"
+          >
+            <Button 
+              as="button"
+              shape="pill"
+              color="primary"
+              size="sm"
+              children="ZJISTIT VÍCE"
             />
-          </Button>
+          </AnchorLink>
         </SlideUp>
       </div>
       <HeroPanel />

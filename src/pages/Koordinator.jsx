@@ -3,9 +3,9 @@ import AppLayout from "layouts/AppLayout";
 import Seo from "components/Seo";
 import Hero from "components/Hero";
 import Button from "components/ui/Button";
-import TitleAndList from "components/TitleAndList";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import TitleAndText from "components/TitleAndText";
+import TitleAndList from "containers/Services/TitleAndList";
+import TitleAndText from "containers/Services/TitleAndText";
 
 export default function NewPage() {
   return (
@@ -20,7 +20,7 @@ export default function NewPage() {
         title="Koordinátor na staveništi"
       />
       <div 
-        className="ui-wrapper py-48"
+        className="ui-wrapper flex flex-col py-48"
         data-wrapper="sm"
       >
         <h2 
@@ -88,18 +88,19 @@ export default function NewPage() {
           ]}
         />
         <b>Koordinátor pro zadavatele stavby zajišťuje koordinaci bezpečnosti práce a ochrany zdraví na staveništi od fáze přípravy až do realizace stavby, naplňuje jeho zákonnou povinnost podle požadavků zákona č. 309/2006 Sb. a tím Vás chrání před sankcemi plynoucími z tohoto zákona.</b>
-        <Button 
-          as="button"
-          className="left-1/2 -translate-x-1/2 translate-y-20 mb-20"
-          shape="pill"
-          color="primary"
-          size="sm"
+        
+        <AnchorLink
+          to="/#kontakt"
+          className="block my-20 mx-auto"
         >
-          <AnchorLink
-            to="/#kontakt"
-            title="OBJEDNAT SLUŽBU"
+          <Button 
+            as="button"
+            shape="pill"
+            color="primary"
+            size="sm"
+            children="OBJEDNAT SLUŽBU"
           />
-        </Button>
+        </AnchorLink>
       </div>
     </AppLayout>
   );

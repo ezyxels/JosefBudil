@@ -29,10 +29,10 @@ export default function ContactSection(){
   return(
     <section 
       id="kontakt"
-      className="ui-wrapper py-20 lg:py-40 text-center grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-around"
+      className="ui-wrapper py-20 lg:py-40 text-center flex flex-col md:flex-row items-center justify-between"
       data-wrapper="md"
       >
-      <div className="mb-5 flex flex-col text-left">
+      <div className="mb-5 flex flex-col text-left max-w-[85%] mr-5">
         <SlideUp
           as="h2"
           className="ui-heading ui-separator text-black"
@@ -60,14 +60,14 @@ export default function ContactSection(){
               className="self-center"
             >
             <div className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full">
-              <HiPhone className="w-4/6 h-4/6"/>
+              <HiPhone className="w-7/12 h-7/12"/>
             </div>
             </a>
             <button
               className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full"
               onClick={setCopyPhone}
             >
-              <FaCopy className="w-7/12 h-7/12"/>
+              <FaCopy className="w-6/12 h-6/12"/>
             </button>
           </div>
         </div>
@@ -79,19 +79,19 @@ export default function ContactSection(){
               className="self-center"
             >
             <div className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full">
-              <HiMail className="w-4/6 h-4/6"/>
+              <HiMail className="w-7/12 h-7/12"/>
             </div>
             </a>
             <button
               className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full"
               onClick={setCopyMail}
             >
-              <FaCopy className="w-4/6 h-4/6"/>
+              <FaCopy className="w-6/12 h-6/12"/>
             </button>
           </div>
         </div>
         <div className="my-2 flex flex-row justify-between">
-          <p  className="my-auto text-xl font-medium max-w-[70%]">
+          <p  className="my-auto text-xl font-medium">
             {globalSettings.client.adress}
           </p>
           <div className="grid grid-cols-2 gap-3 items-center min-w-[80px]">
@@ -102,14 +102,14 @@ export default function ContactSection(){
               className="self-center"
             >
             <div className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full">
-              <FaLocationArrow className="w-4/6 h-4/6"/>
+              <FaLocationArrow className="w-6/12 h-6/12"/>
             </div>
             </a>
             <button
               className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full"
               onClick={setCopyAdress}
             >
-              <FaCopy className="w-4/6 h-4/6"/>
+              <FaCopy className="w-6/12 h-6/12"/>
             </button>
 
           </div>

@@ -3,8 +3,8 @@ import AppLayout from "layouts/AppLayout";
 import Seo from "components/Seo";
 import Hero from "components/Hero";
 import Button from "components/ui/Button";
-import TitleAndList from "components/TitleAndList";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import TitleAndList from "containers/Services/TitleAndList";
 
 export default function NewPage() {
   return (
@@ -19,7 +19,7 @@ export default function NewPage() {
         title="Bezpečnost a ochrana zdraví při práci"
       />
       <div 
-        className="ui-wrapper py-48"
+        className="ui-wrapper flex flex-col py-48"
         data-wrapper="sm"
       >
         <h2 
@@ -46,18 +46,18 @@ export default function NewPage() {
             "harmonogramy revizí, kontrol a prohlídek",
           ]}
         />
-        <Button 
-          as="button"
-          className="left-1/2 -translate-x-1/2 translate-y-20 mb-20"
-          shape="pill"
-          color="primary"
-          size="sm"
+        <AnchorLink
+          to="/#kontakt"
+          className="block my-20 mx-auto"
         >
-          <AnchorLink
-            to="/#kontakt"
-            title="OBJEDNAT SLUŽBU"
+          <Button 
+            as="button"
+            shape="pill"
+            color="primary"
+            size="sm"
+            children="OBJEDNAT SLUŽBU"
           />
-        </Button>
+        </AnchorLink>
       </div>
     </AppLayout>
   );
