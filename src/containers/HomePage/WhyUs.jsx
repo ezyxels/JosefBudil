@@ -27,8 +27,8 @@ export default function WhyUs(){
           formats={["avif","webp", "jpeg", "png"]}
         />
         <p className="lg:p-8 m-auto text-left">
-        Nabízím komplexní služby v oblasti BOZP a PO (bezpečnosti práce a požární ochrany) s působností v Plzeňském kraji. Naše služby zahrnují poradenství a konzultace a veškerý související servis. 
-        Nabízíme více jak 9let zkušenost, což je určitou zárukou a garancí kvality poskytovaných služeb. Mám zkušenosti jak s malými, tak velkými mezinárodními korporacemi. Bedlivě hlídáme aktuálnost všech zákonů a nařízení České republiky a souvisejících zákonů z Evropské unie. Za provedenou práci přebíráme plnou zodpovědnost.
+        Nabízíme komplexní služby v oblasti BOZP a PO (bezpečnosti práce a požární ochrany) s působností v Plzeňském kraji. Naše služby zahrnují poradenství a konzultace a veškerý související servis. 
+        Nabízíme více jak 9 letou zkušenost, což je určitou zárukou a garancí kvality poskytovaných služeb. Máme zkušenosti jak s malými, tak velkými mezinárodními korporacemi. Bedlivě hlídáme aktuálnost všech zákonů a nařízení České republiky a souvisejících zákonů z Evropské unie. Za provedenou práci přebíráme plnou zodpovědnost.
         <br></br><br></br>
         <b>Naší prioritou je Vaše spokojenost!</b>
         </p>

@@ -16,7 +16,7 @@ const globalSettings = {
     phone: "+420 728 399 990",
     email: "info@revizakpino.cz",
     adress: "Tymákovská 1048, 33701 Rokycany",
-    googleAdress:"https://goo.gl/maps/Pn3GPAV5ZUwRcdGV8"
+    googleAdress:"https://goo.gl/maps/189MCrwA7PYYok437"
   },
   darkMode: {
     storageKey: "reveal-theme",

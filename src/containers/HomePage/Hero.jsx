@@ -17,10 +17,7 @@ export default function Hero() {
         formats={["avif","webp", "jpeg", "png"]}
       />
       <div className="w-full h-full absolute top-0 left-0 bg-black opacity-30"></div>
-      <div
-        className="ui-wrapper m-auto flex flex-col justify-center items-center text-white"
-        data-wrapper="sm"
-      >
+      <div className="w-full h-1/2 absolute translate-y-1/2 flex flex-col justify-center items-center text-white">
         <SlideUp
           as="span"
           className="ui-heading font-medium tracking-widest uppercase self-center text-center mb-4 mt-20 sm:mt-0 text-white"
