@@ -58,6 +58,7 @@ export default function ContactSection(){
             <a
               href={callToAction[0].link}
               className="self-center"
+              aria-label="Tlačítko pro volání na telefoní číslo"
             >
             <div className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full">
               <HiPhone className="w-7/12 h-7/12"/>
@@ -66,6 +67,7 @@ export default function ContactSection(){
             <button
               className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full"
               onClick={setCopyPhone}
+              aria-label="Tlačítko pro zkopírování telefoního čísla"
             >
               <FaCopy className="w-6/12 h-6/12"/>
             </button>
@@ -77,6 +79,7 @@ export default function ContactSection(){
             <a
               href={callToAction[1].link}
               className="self-center"
+              aria-label="Tlačítko pro odeslání emailu"
             >
             <div className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full">
               <HiMail className="w-7/12 h-7/12"/>
@@ -85,6 +88,7 @@ export default function ContactSection(){
             <button
               className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full"
               onClick={setCopyMail}
+              aria-label="Tlačítko pro zkopírování emailové adresy"
             >
               <FaCopy className="w-6/12 h-6/12"/>
             </button>
@@ -100,6 +104,7 @@ export default function ContactSection(){
               target="_blank"
               rel="noreferrer"
               className="self-center"
+              aria-label="Tlačítko pro otevření mapy"
             >
             <div className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full">
               <FaLocationArrow className="w-6/12 h-6/12"/>
@@ -108,6 +113,7 @@ export default function ContactSection(){
             <button
               className="w-10 h-10 flex justify-center items-center bg-orange-300 rounded-full"
               onClick={setCopyAdress}
+              aria-label="Tlačítko pro zkopírování adresy"
             >
               <FaCopy className="w-6/12 h-6/12"/>
             </button>

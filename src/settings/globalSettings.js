@@ -1,12 +1,12 @@
 const globalSettings = {
   meta: {
-    url: "https://domena.cz",
-    shortUrl: "domena.cz",
+    url: "https://bezpecakpino.cz",
+    shortUrl: "bezpecakpino.cz",
     language: "cs",
     author: "reveal - https://reveal.cz",
-    siteName: "Revizák pino Plzeň", // Slouží také jako prefix do záložek v prohlížeči
+    siteName: " Bezpečák pino Plzeň", // Slouží také jako prefix do záložek v prohlížeči
     description:
-      "React starter se základním nastavením a komponenty pro rychlý start nového reveal projektu.",
+      "Kompletní služby v oblasti bezpečnosti práce, požární ochrany revizí elektrických zařízení a koordinace na staveništi s působností v celém Plzeňském kraji.",
   },
   launchDate: "1. 1. 2022",
   client: {
@@ -14,7 +14,7 @@ const globalSettings = {
     companyName: "BEZPECAK PINO",
     ico: "67118933",
     phone: "+420 728 399 990",
-    email: "info@revizakpino.cz",
+    email: "info@bezpecakpino.cz",
     adress: "Tymákovská 1048, 33701 Rokycany",
     googleAdress:"https://goo.gl/maps/189MCrwA7PYYok437"
   },

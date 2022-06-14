@@ -77,7 +77,7 @@ export default function Navbar() {
             className="ui-heading my-auto uppercase text-white font-normal"
             data-heading="md"
           >
-              Josef Budil
+              Bezpečák Pino
             </span>
         </Link>
 
@@ -135,7 +135,7 @@ export default function Navbar() {
         }`}
       >
         {/* Vnitřní wrapper mobilního menu */}
-        <div className="ui-wrapper h-full pt-24 xs:pt-56 pb-44 flex flex-col items-center justify-between">
+        <div className="ui-wrapper h-full pt-24 xs:pt-44 pb-44 flex flex-col items-center justify-between">
           {/* Mobile - Menu list s položkami */}
           <ul
             id="mobile-menu-list"

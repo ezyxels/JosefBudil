@@ -10,9 +10,9 @@ export default function NewPage() {
   return (
     <AppLayout>
       <Seo
-        title="Revize, požární ochrana, BOZP a další | Revizák Pino Plzeň"
-        description="Meta description...."
-        keywords="Awesome, Keywords, Goes, Here"
+        title="Bezpečnost Práce"
+        description="Bezpečnost práce a ochrana zdraví při práci"
+        keywords="bezpečnost práce, pracovní rizika, bozp"
       />
 
       <Hero

@@ -1,9 +1,6 @@
 // Settings
 import globalSettings from "settings/globalSettings";
 
-// Global components
-import Link from "components/ui/Link";
-
 // Tightly coupled components
 import FooterRevealMark from "./FooterRevealMark";
 
@@ -24,18 +21,7 @@ export default function Footer() {
             Copyright © {new Date().getFullYear()} {globalSettings.meta.shortUrl}
           </span>
         </div>
-        <div className="flex flex-col md:flex-row mt-5 md:mt-auto">
-          <ul className="list-none flex flex-col md:mr-10">
-            <li className="self-center mt-auto mb-auto">
-              <Link
-                to="/cookies"
-                className="ui-link font-normal"
-                data-link="2"
-              >
-                Cookies
-              </Link>
-            </li>
-          </ul>
+        <div className="mt-8 sm:mt-auto">
           <FooterRevealMark />
         </div>
       </div>

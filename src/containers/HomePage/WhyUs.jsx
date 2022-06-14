@@ -9,7 +9,7 @@ export default function WhyUs(){
       data-wrapper="md"
     >
       <SlideUp
-        as="h3"
+        as="h2"
         className="ui-heading ui-separator text-secondary mb-20"
         data-separator="center"
         data-heading="lg"

@@ -13,13 +13,13 @@ export default function NewPage() {
   return (
     <AppLayout>
       <Seo
-        title="Revize, požární ochrana, BOZP a další | Revizák Pino Plzeň"
-        description="Meta description...."
-        keywords="Awesome, Keywords, Goes, Here"
+        title="Revize elektrických zařízení, spotřebičů a nářadí"
+        description="Revize elektrických zařízení, spotřebičů a ručního nářadí"
+        keywords="revize, nářadí, elektronika, spotřebiče, elektrické zařízení"
       />
 
       <Hero
-        title="REVIZE elektrických zařízení"
+        title="Revize elektrických zařízení"
       />
       
       <div 
